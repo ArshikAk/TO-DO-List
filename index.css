@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: antiquewhite;
+    background-repeat: no-repeat;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+.con{
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: aqua;
+    display: flex;
+    margin-top: 30vh;
+    flex-direction: column;
+    align-items: center;
+    /* width: 80vh; */
+}
+
+.addTask{
+    margin: 20px 0;
+}
+
+.addTask input{
+    width: 35vw;
+    height: 4vh;
+}
+
+.addTask input:hover{
+    cursor: pointer;
+}
+
+.addTask button{
+    height: 4vh;
+    width: 3vw;
+    min-width: 10px;
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+}
+
+.taskList{
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    font-size: x-large;
+}
+
+
+.taskList li{
+    display: flex;
+    flex-direction: row;
+    font-size: larger;
+    border: 1px solid black;
+    background-color: white;
+    padding: 10px 10px;
+    margin: 5px 0px;
+}
+
+
+
+.taskList li span{
+    margin-left: 35vw;
+    cursor: pointer;
+    
+}
+
+.taskList li:nth-child(odd){
+    background-color: #978989;
+}
+
+ul li.checked {
+    text-decoration: line-through;
+  }
+  
+ul li.checked::before {
+    content: ' ';
+    color: #f44336;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 10px;
+    margin: 5px;
+  }
+
+  .close {
+    right: 0;
+    top: 0;
+    text-decoration: none;
+  }
+  
+  .close:hover {
+    background-color: #f44336;
+    color: white;
+  }
