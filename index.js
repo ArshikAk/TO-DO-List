@@ -28,9 +28,9 @@ function newElement() {
 
     if (inputValue === '') {
       alert("Enter a Valid Task");
-      document.getElementById("myInput").value = "";
+      document.getElementById("inputValue").value = "";
     } else {
       document.getElementById("Task").appendChild(li);
-      document.getElementById("myInput").value = "";
+      document.getElementById("inputValue").value = "";
     }
   }
